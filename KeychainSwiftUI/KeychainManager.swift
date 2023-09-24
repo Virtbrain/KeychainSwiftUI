@@ -14,13 +14,13 @@ enum KeychainError: Error {
 
 final class KeychainManager {
     static func save(password: Data, account: String) throws -> String {
-        let query: [CFString: Any] = [
+        let query = [
             kSecClass: kSecClassGenericPassword,
             kSecAttrAccount: account,
             kSecValueData: password
-        ]
+        ] as CFDictionary
         
-        let status = SecItemAdd(query as CFDictionary, nil)
+        let status = SecItemAdd(query, nil)
         
         guard status != errSecDuplicateItem else {
             throw KeychainError.duplicateItem
@@ -34,17 +34,17 @@ final class KeychainManager {
     }
     
     static func getPassword(for account: String) throws -> Data? {
-        let query: [CFString: Any] = [
+        let query = [
             kSecClass: kSecClassGenericPassword,
             kSecAttrAccount: account,
             kSecReturnData: kCFBooleanTrue as Any
-        ]
+        ]  as CFDictionary
         
         var result: AnyObject?
         
-        let status = SecItemCopyMatching(query as CFDictionary, &result)
+        let status = SecItemCopyMatching(query, &result)
         
-        if status == errSecSuccess {
+        guard status == errSecSuccess else {
             throw KeychainError.unknown(status: status)
         }
         
