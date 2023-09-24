@@ -11,6 +11,7 @@
 		14E4B9012AC01F6A00F28115 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E4B9002AC01F6A00F28115 /* ContentView.swift */; };
 		14E4B9032AC01F6D00F28115 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14E4B9022AC01F6D00F28115 /* Assets.xcassets */; };
 		14E4B9062AC01F6D00F28115 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14E4B9052AC01F6D00F28115 /* Preview Assets.xcassets */; };
+		14E4B90D2AC020BB00F28115 /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E4B90C2AC020BB00F28115 /* KeychainManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		14E4B9002AC01F6A00F28115 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		14E4B9022AC01F6D00F28115 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14E4B9052AC01F6D00F28115 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		14E4B90C2AC020BB00F28115 /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 				14E4B9002AC01F6A00F28115 /* ContentView.swift */,
 				14E4B9022AC01F6D00F28115 /* Assets.xcassets */,
 				14E4B9042AC01F6D00F28115 /* Preview Content */,
+				14E4B90C2AC020BB00F28115 /* KeychainManager.swift */,
 			);
 			path = KeychainSwiftUI;
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				14E4B9012AC01F6A00F28115 /* ContentView.swift in Sources */,
+				14E4B90D2AC020BB00F28115 /* KeychainManager.swift in Sources */,
 				14E4B8FF2AC01F6A00F28115 /* KeychainSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
